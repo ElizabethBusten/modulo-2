@@ -1,0 +1,26 @@
+
+button {
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+
+
+.cuadrado {
+    padding: 50px 50px;
+    border-radius: 5px;
+    background: var(--color);
+    cursor: pointer;
+}
+
+#azul {--color: darkblue;}
+
+.fondo.azul {background-color: darkblue;}
+
+#violeta {--color: purple;}
+
+.fondo.violeta {background-color: purple;}
+
+#verde {--color: darkgreen;}
+
+.fondo.verde {background-color: darkgreen;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1 M2U1</title>
+    <link rel="stylesheet" href="tarea 1 M2U1.css"> 
+</head>
+
+<body class="fondo">
+    <div>
+        <h2>Cuadrados de colores</h2>
+        <p>
+            <button class="cuadrado" id="azul"></button>
+            <button class="cuadrado" id="violeta"></button>
+            <button class="cuadrado" id="verde"></button>
+        </p>
+    </div>
+    <script>
+const fondo = document.getElementsByClassName('fondo')
+const cuadrado = document.getElementsByClassName('cuadrado')
+const azul = document.getElementById('azul');
+const violeta = document.getElementById('violeta');
+const verde = document.getElementById('verde');
+for(let i = 0; i <= 2; i++){
+
+fondo[i].addEventListener('click', (e)=> {
+        e.currentTarget.classList.toggle('azul');
+});
+
+fondo[i].addEventListener('click', (e)=> {
+    e.currentTarget.classList.toggle('violeta');
+});
+
+fondo[i].addEventListener('click', (e)=> {
+    e.currentTarget.classList.toggle('verde');
+});
+}
+    </script>
+</body>
+
+</html>

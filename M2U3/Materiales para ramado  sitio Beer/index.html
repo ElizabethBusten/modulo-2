@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Pub</title>
+    <!-- start fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap"
+        rel="stylesheet">
+    <!-- end fonts -->
+    <!-- start css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/beer pub.css">
+    <!-- end css -->
+</head>
+
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Beer Pub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" data-bs-theme="dark">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Food</a></li>
+                            <li><a class="dropdown-item" href="#">Beers</a></li>
+                            <li><a class="dropdown-item" href="#">Cocktails</a></li>
+                            <li><a class="dropdown-item" href="#">Spirits</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promotion">Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#staff1">Meet the Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book Online</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start content -->
+    <div class="container-fluid">
+        <!-- start hero -->
+        <div id="home" class="row align-items-center hero">
+            <div class="col-lg-3 offset-lg-2">
+                <h1>Beer Pub</h1>
+                <p>Located in the riverside of the city, there’s always something happening at Beer Pub.
+                    <br> Whether it's a major cultural or sporting event, or a special gathering in the area itself, we
+                    often have something
+                    special on offer.
+                    <br> In many ways, Beer Pub is the best kept secret in the riverside.
+                </p>
+            </div>
+        </div>
+        <!-- end hero -->
+    </div>
+    <!-- end content -->
+
+    <!-- start MENU -->
+    <div class="row my-3 promomenu">
+        <div id="menu" class="col-md-3 offset-md-3 py-3">
+            <h2 class="text-center">Menu</h2>
+            <ul class="menu-list">
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/F.jpg" alt="">
+                        Food</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/B.jpg" alt="">
+                        Beers</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/C.jpg" alt="">
+                        Cocktails</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/S.jpg" alt="">
+                        Spirits</a></li>
+            </ul>
+        </div>
+
+
+        <!-- end MENU -->
+
+        <!-- START PROMO -->
+        <div class="col-md-3">
+            <div class="rounded py-3 promos">
+                <h2 class="text-center">Promos</h2>
+                <div id="promotion" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="promo">
+                                <img src="img/HAPPY HOUR.jpg" class="d-block w-100" alt="happy Hour">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Happy Hour</h5>
+                                    <p>Enjoy our happy hour on tap beers and house spirits Monday to Friday from 4pm-6pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="promo">
+                                <img src="img/BOTTOMESS BRUNCH1.jpg" class="d-block w-100" alt="Bottomless Pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bottomless Pizza</h5>
+                                    <p>Enjoy our Bottomless pizza on Sundays at lunch time.
+                                        <br>$40 p/p for 2 hours.
+                                        <br> Make your reservations!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="promo">
+                                <img src="img/COCKTAILS.jpg" class="d-block w-100" alt="cocktail special">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cocktail Speecials</h5>
+                                    <p>Every Friday and Sturday nights we have a new special cocktail at a very special
+                                        price.
+                                        <br> ALL NIGHT!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PROMO -->
+
+    <!-- start Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal -->
+
+    <!-- start About us -->
+    <div id="about" class="row align-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="img/historia_1.jpg" alt="about1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3  d-none d-sm-block">
+            <img src="img/historia_2.jpg" alt="about2" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam in earum, non, amet voluptate
+                inventore at rerum commodi atque itaque architecto enim asperiores voluptates porro. Molestias
+                cupiditate dignissimos illum.</p>
+        </div>
+
+    </div>
+    <!-- end About us -->
+    <!-- start staff -->
+    <div id="staff1" class="row align-items-stretch my-3 staff py-4">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Staff</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/nosotros01.jpg" class="card-img-top" alt="Charlotte">
+                        <div class="card-body">
+                            <h4 class="card-title">Charlotte</h4>
+                            <h6>Venue Manager</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur
+                                non, reprehenderit perferendis vel quasi aperiam hic labore magni quisquam accusantium
+                                et repellendus doloremque cumque earum eius tempore ut quos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/nosotros02.jpg" class="card-img-top" alt="Joseph">
+                        <div class="card-body">
+                            <h4 class="card-title">Joseph</h4>
+                            <h6>Chef</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur
+                                non, reprehenderit perferendis vel quasi aperiam hic labore magni quisquam accusantium
+                                et repellendus doloremque cumque earum eius tempore ut quos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/nosotros03.jpg" class="card-img-top" alt="Edward">
+                        <div class="card-body">
+                            <h4 class="card-title">Edward</h4>
+                            <h6>Bartender</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur
+                                non, reprehenderit perferendis vel quasi aperiam hic labore magni quisquam accusantium
+                                et repellendus doloremque cumque earum eius tempore ut quos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/nosotros04.jpg" class="card-img-top" alt="Christopher">
+                        <div class="card-body">
+                            <h4 class="card-title">Christopher</h4>
+                            <h6>Waiter</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur
+                                non, reprehenderit perferendis vel quasi aperiam hic labore magni quisquam accusantium
+                                et repellendus doloremque cumque earum eius tempore ut quos?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end staff -->
+    <!-- start meet us and contact-->
+    <div id="book" class="row py-4">
+
+        <!-- start come meet us -->
+        <div class="col-md-4 offset-md-2">
+            <h2>Come Meet Us</h2>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4393.2546667946835!2d144.96068873079625!3d-37.82084175111952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642ad51a8798d%3A0x9826bd8704561932!2sThe%20Meat%20%26%20Wine%20Co%20Southbank!5e0!3m2!1sen!2sau!4v1674712535318!5m2!1sen!2sau"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- end come meet us -->
+
+        <!-- start constact -->
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Book Online</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="col-md-6">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time">
+                </div>
+                <div class="col-md-6">
+                    <label for="party" class="form-label">Party size</label>
+                    <input type="number" class="form-control" id="party">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-dark">Book</button>
+                </div>
+            </form>
+        </div>
+        <!-- end contact -->
+    </div>
+    <!-- end meet us and contact -->
+
+    <!-- start footer -->
+    <footer>
+        <p class="text-center">Designed by Elizabeth Busten</p>
+    </footer>
+    <!-- start js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- end js -->
+</body>
+
+</html>
